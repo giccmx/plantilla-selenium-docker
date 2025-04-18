@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  selenium:
+    build: .
+    container_name: selenium_docker
+    networks:
+      -   selenium_docker
+    environment:
+      - DISPLAY=:99
+      - PYTHONPATH=/app
+    volumes:
+      - .:/app
+      - ./screenshots:/screenshots
+    working_dir: /app
+
+networks:
+  selenium_docker:
+    driver: bridge
