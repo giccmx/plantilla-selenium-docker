@@ -24,7 +24,7 @@ def screenshot(driver,loop):
 
 def get_site(driver):
     try:
-        driver.get('http://www.google.com')
+        driver.get('https://www.selenium.dev')
     except Exception as e:
         traceback.print_exc()
         logging.error(str(e), exc_info=True)

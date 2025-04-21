@@ -1,0 +1,38 @@
+# Ignorar archivos y carpetas innecesarias
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# Ignorar entornos virtuales
+venv/
+
+# Ignorar dependencias instaladas localmente
+*.egg-info/
+dist/
+build/
+
+# Ignorar archivos de configuración de editores
+.vscode/
+.idea/
+*.swp
+
+# Ignorar archivos de control de versiones
+.git/
+.gitignore
+.gcloudignore
+
+# Ignorar volúmenes montados o archivos temporales
+docker-compose.override.yml
+*.tmp
+
+
+# Ignorar directorios con scripts incompletos
+
+rrss/
+controllers/
+
+# Ignorar logs
+.DS_Store
+*.log
